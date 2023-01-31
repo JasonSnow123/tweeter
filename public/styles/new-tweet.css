@@ -34,3 +34,7 @@ output {
   display: flex;
   justify-content: space-between;
 }
+
+.overlimit {
+  color: #f21313;
+}
