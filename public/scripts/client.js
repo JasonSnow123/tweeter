@@ -4,6 +4,12 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
 const renderTweets = function(data) {
   for (const tweet of data) {
     let newTweet = createTweetElement(tweet);
@@ -28,7 +34,7 @@ const createTweetElement = function(tweet) {
           </div>
           <h4>${tweet.user.handle}</h4>
         </div>
-        <div class="description">${tweet.content.text}</div>
+        <div class="description">${escape(tweet.content.text)}</div>
         <hr>
         <div class="info">
           <h6>${timeago.format(tweet.created_at)}</h6>
@@ -41,6 +47,8 @@ const createTweetElement = function(tweet) {
       </article>`;
   return tweetObject;
 };
+
+
 
 const loadTweets = function() {
   $.get('/tweets', function(data) {
