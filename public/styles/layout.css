@@ -89,3 +89,7 @@ div.info > div > .fa-solid:hover {
 div.picture > h4 {
   margin-left: 10px;
 }
+
+.description {
+  word-wrap: break-word;
+}
