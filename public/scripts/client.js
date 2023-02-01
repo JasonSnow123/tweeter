@@ -4,39 +4,21 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-const data = [
-  {
-    "user": {
-      "name": "Newton",
-      "avatars": "https://i.imgur.com/73hZDYK.png"
-      ,
-      "handle": "@SirIsaac"
-    },
-    "content": {
-      "text": "If I have seen further it is by standing on the shoulders of giants"
-    },
-    "created_at": 1461116232227
-  },
-  {
-    "user": {
-      "name": "Descartes",
-      "avatars": "https://i.imgur.com/nlhLi3I.png",
-      "handle": "@rd" },
-    "content": {
-      "text": "Je pense , donc je suis"
-    },
-    "created_at": 1461113959088
-  }
-]
-
 const renderTweets = function(data) {
   for (const tweet of data) {
     let newTweet = createTweetElement(tweet);
+    /* Returns a string literal containing html code for the tweetcontainer
+     * Adds its to the tweet-container using an id
+     * unique ID to prevent accidentally appeneding to other contents
+     */
     $("#tweet-container").append(newTweet);
   }
 };
 
 const createTweetElement = function(tweet) {
+  /* tweetObject is html skeleton that was predesigned for tweets in the database
+   * Takes incoming tweetdata from the database and fills in to appropriate location
+   */
   const tweetObject = `
       <article class="tweet header">
         <div class="tweeter">
@@ -49,7 +31,7 @@ const createTweetElement = function(tweet) {
         ${tweet.content.text}
         <hr>
         <div class="info">
-          <h6>${tweet.created_at}</h6>
+          <h6>${timeago.format(tweet.created_at)}</h6>
           <div>
             <i class="fa-solid fa-flag"></i>
             <i class="fa-solid fa-share"></i>
@@ -60,9 +42,13 @@ const createTweetElement = function(tweet) {
   return tweetObject;
 };
 
-renderTweets(data);
+const loadTweets = function() {
+  $.get('/tweets', function(data) {
+    renderTweets(data);
+  });
 
+};
 
 $(() => {
-  renderTweets(data);
+  loadTweets();
 });
