@@ -10,7 +10,11 @@ $(() => {
       return alert("Tweet content too long");
     }
     $("#tweet-text").val("");
-    $.post("/tweets", tweetData);
+    $.post("/tweets", tweetData, () => {
+      $.get("/tweets", (data) => {
+        $("#tweet-container").prepend(createTweetElement(data[data.length - 1]));
+      });
+    });
   });
 });
 
