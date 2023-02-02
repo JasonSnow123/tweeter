@@ -36,3 +36,17 @@ $(() => {
  * Add event listener for toggle new area
  * Add scroll to the top button
  */
+
+/* this callback function for ready document automatically hides the create tweet page
+ * this is for on start up that the create tweet is hidden initially
+ */
+$(() => {
+  $('.new-tweet').hide();
+});
+
+$(() => {
+  $(".fa-angles-down").click(() => {
+    $('.new-tweet').slideToggle();
+    $('textarea').focus();
+  });
+});

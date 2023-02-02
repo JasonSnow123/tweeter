@@ -4,7 +4,7 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-const escape = function (str) {
+const escape = function(str) {
   //escape function to prevent scripts from running when tweet is created
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
