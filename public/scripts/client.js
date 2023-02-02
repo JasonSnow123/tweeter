@@ -49,7 +49,6 @@ const createTweetElement = function(tweet) {
 };
 
 
-
 const loadTweets = function() {
   $.get('/tweets', function(data) {
     renderTweets(data);
@@ -57,6 +56,7 @@ const loadTweets = function() {
 
 };
 
+// in a jquery function to run function once document has loaded
 $(() => {
   loadTweets();
 });
