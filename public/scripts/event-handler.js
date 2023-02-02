@@ -17,12 +17,9 @@ $(() => {
      * uses a callback once the post requests is successful to get the last tweet
      * posts the tweet as the first element in the container
      */
-    $.post("/tweets", tweetData, () => {
-      $.get("/tweets", (data) => {
-        const newestTweet = createTweetElement(data[data.length - 1]);
-        $("#tweet-container").prepend(newestTweet);
-      });
-    });
+    $.post("/tweets", tweetData)
+      .done(loadTweets);
   });
 });
+
 

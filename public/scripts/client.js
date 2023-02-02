@@ -17,7 +17,7 @@ const renderTweets = function(data) {
      * Adds its to the tweet-container using an id
      * unique ID to prevent accidentally appeneding to other contents
      */
-    $("#tweet-container").append(newTweet);
+    $("#tweet-container").prepend(newTweet);
   }
 };
 
