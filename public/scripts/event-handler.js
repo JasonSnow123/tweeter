@@ -63,7 +63,7 @@ $(() => {
 // displays the scroll button if the distance is greater than 500 listening to scroll event
 $(() => {
   $(window).scroll(() => {
-    if (window.scrollY > 500) {
+    if (window.scrollY > 400) {
       $('.scroll-top').show();
     } else {
       $('.scroll-top').hide();

@@ -52,6 +52,7 @@ const createTweetElement = function(tweet) {
 
 const loadTweets = function() {
   $.get('/tweets', function(data) {
+    $('#tweet-container').empty();
     renderTweets(data);
   });
 

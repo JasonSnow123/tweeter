@@ -26,8 +26,10 @@ nav > span {
 
 p {
   margin: 0;
+  padding-left: 10px;
   padding-bottom: 2px;
   cursor: pointer;
+  text-align: center;
 }
 
 .fa-angles-down{
