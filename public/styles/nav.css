@@ -31,6 +31,7 @@ p {
 
 .fa-angles-down{
   color: red;
+  cursor: pointer;
 }
 
 header {
@@ -55,7 +56,7 @@ h2 {
   header {
     margin: 40px;
     margin-top: 190px;
-    width: 70vw;
-    height: 25vw;
+    width: 20vw;
+    height: 20vw;
   }
 }
