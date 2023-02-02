@@ -1,4 +1,4 @@
-.logo-bar {
+nav {
   height: 120px;
   width: 100vw;
   background-color: #4056A1;
@@ -16,7 +16,7 @@ nav > span {
   font-size: 150%;
 }
 
-.nav-New-Tweet {
+.navbar{
   display: flex;
   padding: 0;
   flex-direction: column;
@@ -24,7 +24,7 @@ nav > span {
   align-items: center;
 }
 
-#addTweet {
+p {
   margin: 0;
   padding-bottom: 2px;
 }
@@ -33,7 +33,7 @@ nav > span {
   color: red;
 }
 
-.profile {
+header {
   display: flex;
   background-color: #649fe8;
   background-image: url("https://www.transparenttextures.com/patterns/shattered-dark.png");

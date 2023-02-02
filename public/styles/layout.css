@@ -38,7 +38,7 @@ body {
   margin: auto;
 }
 
-#error-tweet {
+label {
   border: 10px solid #f70202;
   padding: 30px;
   font-size: 2em;
