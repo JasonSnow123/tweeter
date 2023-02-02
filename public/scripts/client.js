@@ -5,6 +5,7 @@
  */
 
 const escape = function (str) {
+  //escape function to prevent scripts from running when tweet is created
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
