@@ -26,8 +26,11 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
-.container {
+.container .picture{
   display: flex;
+}
+
+.container {
   flex-direction: column;
   justify-content: center;
   background-color: #f4f1ec;
@@ -35,9 +38,15 @@ body {
   margin: auto;
 }
 
-.picture {
-  display: flex;
+#error-tweet {
+  border: 10px solid #f70202;
+  padding: 30px;
+  font-size: 2em;
+  font-weight: 600;
+  color: #f70202;
+  display: none;
 }
+
 #tweet-container {
   display: flex;
   flex-direction: column;
@@ -48,6 +57,12 @@ body {
   justify-content: space-between;
   padding-right: 20px;
 }
+
+.tweet {
+  margin-top: 20px;
+  border: 4px solid #2f353d;
+}
+
 article {
   padding: 0 10px;
 }
@@ -62,18 +77,18 @@ article:hover {
   height: 50px;
 }
 
-.tweet {
-  margin-top: 20px;
-  border: 4px solid #2f353d;
+h6 {
+  margin: 5px 0;
 }
+
+h4 {
+  margin-left: 10px;
+}
+
 
 div > .fa-solid {
   padding-top: 10px;
   padding-right: 10px;
-}
-
-h6 {
-  margin: 5px 0;
 }
 
 div.info > div > .fa-solid:hover {
@@ -84,10 +99,6 @@ div.info > div > .fa-solid:hover {
   width: 50px;
   height: 50px;
   margin-top: 20px;
-}
-
-div.picture > h4 {
-  margin-left: 10px;
 }
 
 .description {

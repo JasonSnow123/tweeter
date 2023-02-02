@@ -6,6 +6,12 @@
   width: 100%;
 }
 
+.tweet-options {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
 #tweet-text {
   outline: 0;
   background-color: #C4dce6;
@@ -27,12 +33,6 @@ button {
 
 output {
   font-family: 'bungee', cursive;
-}
-
-.tweet-options {
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .overlimit {
