@@ -35,7 +35,7 @@ const createTweetElement = function(tweet) {
           </div>
           <h4>${tweet.user.handle}</h4>
         </div>
-        <div class="description">${escape(tweet.content.text)}</div>
+        <h5>${escape(tweet.content.text)}<h5>
         <hr>
         <div class="info">
           <h6>${timeago.format(tweet.created_at)}</h6>
