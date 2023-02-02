@@ -39,14 +39,33 @@ $(() => {
 
 /* this callback function for ready document automatically hides the create tweet page
  * this is for on start up that the create tweet is hidden initially
+ * also hides the scroll to top button automatically
  */
 $(() => {
   $('.new-tweet').hide();
+  $('.scroll-top').hide();
 });
 
 $(() => {
   $(".fa-angles-down").click(() => {
     $('.new-tweet').slideToggle();
     $('textarea').focus();
+  });
+});
+
+// displays the scroll button if the distance is greater than 500 listening to scroll event
+$(() => {
+  $(window).scroll(() => {
+    if (window.scrollY > 500) {
+      $('.scroll-top').show();
+    } else {
+      $('.scroll-top').hide();
+    }
+  })
+});
+
+$(() => {
+  $('.scroll-top').click(() => {
+    window.scrollTo(0, 0);
   });
 });

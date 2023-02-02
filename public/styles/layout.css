@@ -135,11 +135,14 @@ h5 {
 }
 
 .scroll-top {
-  position: absolute;
+  position: fixed;
   right: 20px;
   bottom: 20px;
   padding: 40px;
   border-radius: 50%;
   background-color: #02F500;
   color: white;
+}
+.scroll-top:hover {
+  background-color: #368200;
 }
