@@ -38,6 +38,23 @@ body {
   margin: auto;
 }
 
+.body-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 960px) {
+  .body-layout {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container {
+    padding-top: 170px;
+    margin-right: 30px;
+  }
+}
+
 label {
   border: 10px solid #f70202;
   padding: 30px;
@@ -101,6 +118,10 @@ div.info > div > .fa-solid:hover {
   margin-top: 20px;
 }
 
-.description {
+h5 {
   word-wrap: break-word;
+  max-width: 80ch;
+  font-size: 2rem;
+  margin: 0;
+  padding: 5px;
 }
