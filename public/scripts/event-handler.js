@@ -5,9 +5,11 @@ $(() => {
     const tweetData = $(this).serialize();
     const tweetValue = tweetData.split("=")[1];
     if (!tweetValue) {
+      $('label').html("Your tweet cannot be empty");
       return $('label').slideDown(1000);
     }
     if (tweetValue.length > 140) {
+      $('label').html("Your tweet is too long");
       return $('label').slideDown(1000);
     }
     $('label').slideUp(0);
