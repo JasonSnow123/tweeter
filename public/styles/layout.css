@@ -60,6 +60,7 @@ body {
   
   #tweet-container {
     max-width: 60vw;
+    margin-right: 50px;
   }
 }
 
