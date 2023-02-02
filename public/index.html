@@ -25,15 +25,15 @@
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <nav class="logo-bar">
+    <nav>
       <span>tweeter</span>
-      <div class="nav-New-Tweet">
-        <p id="addTweet"><b>Add</b> a new Tweet</p>
+      <div class="navbar">
+        <p><b>Add</b> a new Tweet</p>
         <i class="fa-solid fa-angles-down"></i>
       </div>
     </nav>
     </body>
-  <header class="profile">
+  <header>
     <div>
       <img src="/images/profile-hex.png">
     </div>
@@ -45,13 +45,13 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <label id="error-tweet">Error Message, Error Message, Error Message, Error Message</label>
+        <label>Error Message, Error Message, Error Message, Error Message</label>
         <h2>Compose Tweet</h2>
-        <form id="create-tweet" method="post" action="/tweets">
-          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+        <form method="post" action="/tweets">
+          <textarea name="text" placeholder="What are you humming about?"></textarea>
           <div class="tweet-options">
-            <button id="submit-tweet" type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
+            <button type="submit">Tweet</button>
+            <output name="counter" for="tweet-text">140</output>
           </div>
         </form>
       </section>

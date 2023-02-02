@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("#tweet-text").on('keyup', function() {
+  $("textarea").on('keyup', function() {
     let characterCount = this.value.length;
     const counterDiv = $(this).parents().children(".tweet-options")[0];
     let counterValue = counterDiv.lastElementChild;
