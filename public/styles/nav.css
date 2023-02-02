@@ -27,16 +27,15 @@ nav > span {
 p {
   margin: 0;
   padding-left: 10px;
-  padding-bottom: 2px;
+  padding-bottom: 0px;
   cursor: pointer;
   text-align: center;
 }
 
-.fa-angles-down{
+i.fa-angles-down{
   color: red;
   cursor: pointer;
-  padding: 30px;
-  padding-bottom: 20px;
+  padding-top: 0;
 }
 
 header {
