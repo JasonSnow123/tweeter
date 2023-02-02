@@ -32,6 +32,8 @@ p {
 .fa-angles-down{
   color: red;
   cursor: pointer;
+  padding: 30px;
+  padding-bottom: 20px;
 }
 
 header {
