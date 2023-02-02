@@ -58,7 +58,8 @@ h2 {
   header {
     margin: 40px;
     margin-top: 190px;
-    width: 20vw;
-    height: 20vw;
+    margin-right: 100px;
+    width: max(500px, 40vw);
+    height: max(500px ,25vw);
   }
 }

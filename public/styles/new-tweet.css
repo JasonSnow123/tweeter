@@ -4,8 +4,11 @@
   flex-direction: column;
   padding: 50px 50px;
   background-color: #C4dce6;
-  width: 100%;
-  
+}
+@media screen and (min-width: 960px) {
+  .new-tweet {
+      max-width: 60vw;
+  }
 }
 
 .tweet-options {
@@ -20,7 +23,7 @@ textarea {
   border: none;
   border-bottom: 1px solid #4b585e;
   resize: none;
-  width: 70vw;
+  width: 50vw;
   height: 4em;
 }
 
