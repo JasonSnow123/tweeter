@@ -27,6 +27,7 @@ nav > span {
 p {
   margin: 0;
   padding-bottom: 2px;
+  cursor: pointer;
 }
 
 .fa-angles-down{
@@ -51,6 +52,7 @@ header {
 img {
   margin-top: 100px;
 }
+
 h2 {
   margin-top: 5px;
   margin-bottom: 30px;

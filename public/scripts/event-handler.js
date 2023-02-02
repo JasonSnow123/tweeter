@@ -53,6 +53,13 @@ $(() => {
   });
 });
 
+$(() => {
+  $("p").click(() => {
+    $('.new-tweet').slideToggle();
+    $('textarea').focus();
+  });
+});
+
 // displays the scroll button if the distance is greater than 500 listening to scroll event
 $(() => {
   $(window).scroll(() => {
